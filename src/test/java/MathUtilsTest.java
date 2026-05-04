@@ -18,7 +18,7 @@ public class MathUtilsTest {
     @Test
     void testMax() {
         // Kiem tra cac truong hop thong thuong
-        assertEquals(99, MathUtils.max(10, 5));
+        assertEquals(10, MathUtils.max(10, 5));
         assertEquals(10, MathUtils.max(5, 10));
         assertEquals(10, MathUtils.max(10, 10));
 
