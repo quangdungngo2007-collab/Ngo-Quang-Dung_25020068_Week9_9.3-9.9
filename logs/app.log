@@ -1,0 +1,18 @@
+2026-05-04 11:09:09 INFO  MathUtils - Dang thuc hien so sanh: a=10, b=5
+2026-05-04 11:09:09 INFO  MathUtils - Dang thuc hien so sanh: a=5, b=10
+2026-05-04 11:09:09 INFO  MathUtils - Dang thuc hien so sanh: a=10, b=10
+2026-05-04 11:09:09 ERROR MathUtils - Loi thuc thi: Khong the chia 10 cho 0
+2026-05-04 11:11:00 INFO  MathUtils - Dang thuc hien so sanh: a=10, b=5
+2026-05-04 11:11:00 INFO  MathUtils - Dang thuc hien so sanh: a=5, b=10
+2026-05-04 11:11:00 INFO  MathUtils - Dang thuc hien so sanh: a=10, b=10
+2026-05-04 11:11:00 INFO  MathUtils - Dang thuc hien so sanh: a=-10, b=-5
+2026-05-04 11:11:00 INFO  MathUtils - Ung dung MathUtils dang khoi dong...
+2026-05-04 11:11:00 INFO  MathUtils - Dang thuc hien so sanh: a=10, b=5
+2026-05-04 11:11:00 ERROR MathUtils - Loi thuc thi: Khong the chia 10 cho 0
+2026-05-04 11:28:23 INFO  MathUtils - Dang thuc hien so sanh: a=10, b=5
+2026-05-04 11:28:23 INFO  MathUtils - Dang thuc hien so sanh: a=5, b=10
+2026-05-04 11:28:23 INFO  MathUtils - Dang thuc hien so sanh: a=10, b=10
+2026-05-04 11:28:23 INFO  MathUtils - Dang thuc hien so sanh: a=-10, b=-5
+2026-05-04 11:28:23 INFO  MathUtils - Ung dung MathUtils dang khoi dong...
+2026-05-04 11:28:23 INFO  MathUtils - Dang thuc hien so sanh: a=10, b=5
+2026-05-04 11:28:23 ERROR MathUtils - Loi thuc thi: Khong the chia 10 cho 0
