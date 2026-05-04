@@ -21,7 +21,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: math-utils-jar
-          path: target/*.jar # Bai 8
+          path: target/MathProject-1.0-SNAPSHOT.jar
   review:
     name: Automated Review
     runs-on: ubuntu-latest
