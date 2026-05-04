@@ -15,7 +15,13 @@ jobs:
           distribution: 'temurin'
           cache: 'maven'
       - name: Create logs directory
-        run: mkdir -p logs
+        run: mkdir -p logs || true
+        if: runner.os != 'Windows'
+
+      - name: Create logs directory (Windows)
+        run: New-Item -ItemType Directory -Force -Path logs
+        if: runner.os == 'Windows'
+
       - name: Build and Verify
         run: mvn clean verify
       - name: Upload Artifact
