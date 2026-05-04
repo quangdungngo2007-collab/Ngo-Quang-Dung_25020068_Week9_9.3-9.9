@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MathUtils.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">MathProject</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">MathUtils.java</span></div><h1>MathUtils.java</h1><pre class="source lang-java linenums">import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+/**
+ * Lop tien ich cung cap cac phep toan co ban nhu tim max va phep chia.
+ */
+public final class MathUtils {
+
+    /** Logger dung de ghi lai nhat ky hoat dong cua he thong. */
+<span class="fc" id="L10">    private static final Logger LOGGER = LoggerFactory</span>
+<span class="fc" id="L11">            .getLogger(MathUtils.class);</span>
+
+    /**
+     * Ham khoi tao private de ngan viec khoi tao doi tuong tu lop tien ich.
+     */
+    private MathUtils() {
+        // Khong cho phep khoi tao
+    }
+
+    /**
+     * Tra ve so lon nhat trong hai so nguyen duoc cung cap.
+     * @param a So nguyen thu nhat.
+     * @param b So nguyen thu hai.
+     * @return Gia tri lon nhat giua a va b.
+     */
+    public static int max(final int a, final int b) {
+<span class="fc" id="L27">        LOGGER.info(&quot;Dang thuc hien so sanh: a={}, b={}&quot;, a, b);</span>
+<span class="fc bfc" id="L28" title="All 2 branches covered.">        if (a &gt;= b) {</span>
+<span class="fc" id="L29">            return a;</span>
+        }
+<span class="fc" id="L31">        return b;</span>
+    }
+
+    /**
+     * Thuc hien phep chia hai so nguyen va kiem tra loi chia cho 0.
+     * @param a So bi chia.
+     * @param b So chia.
+     * @return Ket qua cua phep chia a / b.
+     * @throws IllegalArgumentException Neu b bang 0.
+     */
+    public static int divide(final int a, final int b) {
+<span class="fc bfc" id="L42" title="All 2 branches covered.">        if (b == 0) {</span>
+<span class="fc" id="L43">            LOGGER.error(&quot;Loi thuc thi: Khong the chia {} cho 0&quot;, a);</span>
+<span class="fc" id="L44">            throw new IllegalArgumentException(&quot;Divider must not be zero&quot;);</span>
+        }
+<span class="fc" id="L46">        return a / b;</span>
+    }
+
+    /**
+     * Phuong thuc chinh de chay ung dung doc lap.
+     * @param args Cac tham so dong lenh.
+     */
+    public static void main(final String[] args) {
+<span class="fc" id="L54">        LOGGER.info(&quot;Ung dung MathUtils dang khoi dong...&quot;);</span>
+<span class="fc" id="L55">        max(10, 5);</span>
+<span class="fc" id="L56">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>
